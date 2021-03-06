@@ -3,13 +3,13 @@ node {
     deleteDir()
 
     try {
-        stage ('Clone') {
+        stage ('eric') {
         	checkout scm
         }
-        stage ('Build') {
+        stage ('yoly') {
         	sh "echo 'shell scripts to build project...'"
         }
-        stage ('Tests') {
+        stage ('vals') {
 	        parallel 'static': {
 	            sh "echo 'shell scripts to run static tests...'"
 	        },
