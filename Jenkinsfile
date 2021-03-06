@@ -3,10 +3,10 @@ node {
     deleteDir()
 
     try {
-        stage ('eric') {
+        stage ('clone') {
         	checkout scm
         }
-        stage ('yoly') {
+        stage ('build') {
         	sh "echo 'shell scripts to build project...'"
         }
         stage ('vals') {
